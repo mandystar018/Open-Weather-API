@@ -24,5 +24,6 @@ $('#weatherLocation').click(function() {
   function getElements(response) {
     $('.showHumidity').text(`The humidity in ${city} is ${response.main.humidity}%`);
     $('.showTemp').text(`The temperature in Kelvins is ${response.main.temp} degrees.`);
+    $('.showCloudCover').text(`The current cloud cover in ${city} is ${response.weather[0].description} of ${response.clouds.all}% coverage.`)
   }
 });
