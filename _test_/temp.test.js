@@ -11,6 +11,6 @@ describe('Temp', () => {
       expect(temp.tempK).toEqual(283.15);
     });
     test('Should convert temp Kelvin into temp Fahrenheit.', () => {
-      expect(temp.tempF).toEqual(51);
+      expect(temp.tempF).toEqual(50);
     });
 });
